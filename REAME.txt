@@ -1,0 +1,33 @@
+Africa Soil Property Prediction Challenge
+1. Team members
+- Steven Du - G1300007H
+- Ho Thi Nga - G1402725D
+- Nguyen Tan Thong - G1402865J
+
+2. Instruction
+2.1 Prequiste packages
+- All the scripts run on Ubuntu 12.04 OS
+- packages need to be installed:
+	+) python2.7 (installed by default on ubuntu 12.04)
+	+) python-py (could be installed by default)
+		$sudo apt-get install python-pip
+	+) build-essential
+		$sudo apt-get install build-essential
+	+) pandas nose
+		$sudo pip install pandas nose
+	+) numpy, scipy
+		sudo pip install scipy numpy
+	+) sklearn
+		$sudo pip install scikit-learn
+	+) r
+		$sudo apt-get install r-base
+2.2 Running experiments
+Refer to readme in the corresponding sub-directories
+-- folder1/readme
+-- folder2/readme
+
+3. Programming languges
+- Python
+- R
+- Matlab
+- Bash/Shell

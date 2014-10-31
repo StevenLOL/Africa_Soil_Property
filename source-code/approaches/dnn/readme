@@ -1,0 +1,30 @@
+Here is the package from Rasmus Berg Palm source code @
+
+    https://github.com/rasmusbergpalm/DeepLearnToolbox
+
+Its readme file and example in file READMEV2.md
+
+The most important sciprts are:
+
+dnn_five_target.m                       %predict all five target in one shot
+dnn_fullfeature_improvement_ws09.m      %predict targets one by one
+
+If you have a good GPU, kindly set hasgpu=1;
+
+
+To make it runnable, you must have a file named "matlab.mat" in this folder.
+
+Which is just the csv data from Kaggle, we save it as mat format, the speed for loading is faster than reading from csv.
+
+The submission folder contains all our submissions under DNN.
+
+
+
+
+
+
+
+
+
+
+

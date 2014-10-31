@@ -1,0 +1,46 @@
+baseline system
+
+This is the baseline system given by organizer.
+
+Source code is from
+
+    https://gist.github.com/a-f-s-i-s/3913d670cb882341a332
+    
+
+First you need install R, then install the BayesTree package.
+
+To install BayesTree form R console:
+    
+    install.packages('BayesTree_0.3-1.tar.gz',repos=NULL,type=source)
+
+To run the baseline system from terminal:
+
+    r bark.r
+    or 
+    R --slave -f bark.r
+    
+    The data should be in ../../data/  folder in csv format.
+    The default is predictions.csv which will gives you The benchmark system gives 0.5 and ranked 810 on the public leader board, on the private leader board it gives 0.56551 and ranked 793. In both cases we beat the benchmark system, we ranked 82th on the public leader board and 512th on the private leader board.
+
+We change the code to barkArgs so it could write the output to different files, which will be use for averaging ouput to fight over-fitting problem.
+
+    To use the script:
+    
+    R --slave -f barkArgs.r --args f000.csv
+
+    A getall.sh will call above command through 4 background threads, make the program running faster.
+    
+To get the average outputs, please check the averageBART.m
+    
+    The output will be BAR_AVG_%d.benchmark
+    The best is the average 50
+    
+
+There are helper function in this folder, like 
+    cleanBART.py   #clean the " from  BART ouput so matlab cound read it
+    rewritecsv.py  #reformat the csv output according the samplesubmission.csv, so it has a correct format for submission
+    
+
+The final output will be in this folder, with name *.benchmark eg : BART_AVG_1.benchmark
+There are samples in the submission folder. 
+    

@@ -1,0 +1,46 @@
+We test many regressors for this task, not all of them give good result, the SVR approach shows better result than others.
+
+
+You can find sklearn package Here:
+
+    http://scikit-learn.org/stable/
+    To install
+    sudo pip install scikit-learn
+
+You also need the pandas, or nose 
+
+    sudo pip install pandas nose
+
+You should have scipy and numpy installed as well if not
+    
+    sudo pip install scipy numpy
+    
+Plase see the approach_1_modelEval.py for details including cross validation on all approach one by one,and make predition:
+
+    approach_1_modelEval.py   
+    
+
+The beest result is SVR approach.
+The above script will produce a cross validation score for each regression methods, and one submission file for each.
+
+
+
+There are also other files in this folder, illustrate different usage of regressors:
+    
+    approach_dt.py         DecisionTreeRegressor
+    
+    approach_sp.py         SVR remove all co2 and depth      0.40861  
+
+    approach_sp_derivative_gaussian_filter.py    first derivative with gaussian filter
+
+    approach_rf.py         RandomForestRegressor
+
+    approach_adaboost.py    ADAboost
+
+    approach_ardregression.py ARDRegression
+
+
+Why there are many simlar files with different regressor ? They actually running indepdently on different PCs with same framework. 
+
+Because we use GIT , using different file for different task will be easy to commit changes in GIT,there will be less conflict caused by modify one files via different clients.
+
